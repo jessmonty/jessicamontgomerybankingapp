@@ -1,0 +1,17 @@
+{
+  "name": "bank-app",
+  "version": "1.0.0",
+  "description": "full stack bank app",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "jessmonty13@hotmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "lowdb": "^1.0.0",
+    "mongodb": "^3.7.3"
+  }
+}
