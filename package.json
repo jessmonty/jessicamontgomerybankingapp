@@ -4,7 +4,8 @@
   "description": "full stack bank app",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node index.js"
   },
   "author": "jessmonty13@hotmail.com",
   "license": "MIT",
