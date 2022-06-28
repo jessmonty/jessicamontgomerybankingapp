@@ -1,5 +1,5 @@
 {
-  "name": "bank-app",
+  "name": "littledb",
   "version": "1.0.0",
   "description": "full stack bank app",
   "main": "index.js",
