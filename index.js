@@ -98,6 +98,6 @@ app.get('/account/all', function (req, res) {
     });
 });
 
-
+var port = 3000;
 app.listen(process.env.PORT || 3000);
 console.log('Running on port: ' + port);
