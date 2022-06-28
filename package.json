@@ -7,6 +7,9 @@
     "test": "jest",
     "start": "npm start"
   },
+  "engines": {
+    "node": "14.19.0"
+  },
   "author": "jessmonty13@hotmail.com",
   "license": "MIT",
   "dependencies": {
