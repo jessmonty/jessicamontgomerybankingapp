@@ -1,12 +1,13 @@
 const MongoClient = require('mongodb').MongoClient;
 const url = 'mongodb+srv://jessmonty:maharedabo08@cluster0.whuns.mongodb.net/?retryWrites=true&w=majority';
 const dotenv = require('dotenv').config();
- 
+
 // connect to mongo
 MongoClient.connect(url, {useUnifiedTopology: true}, function(err, client){
     console.log("Connected successfully to db server");
     //connect to myproject database
-    db = client.db('myproject');
+    const dbName = 'myproject';
+    const db = client.db(dbName);
 });
 
 // create user account
