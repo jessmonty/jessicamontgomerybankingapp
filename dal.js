@@ -1,9 +1,14 @@
-const mongoose = require('mongoose');
+const MongoClient = require('mongodb').MongoClient;
+const url = process.env.MONGODB_URI || 'mongodb://localhost:27017';
 let db            = null;
 const dotenv = require('dotenv').config();
  
 // connect to mongo
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/myproject');
+MongoClient.connect(url, {useUnifiedTopology: true}, function(err, client){
+    console.log("Connected successfully to db server");
+    //connect to myproject database
+    db = client.db('myproject');
+});
 
 // create user account
 function create(name, email, password){
