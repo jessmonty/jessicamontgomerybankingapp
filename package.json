@@ -4,8 +4,7 @@
   "description": "full stack bank app",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "start": "node index.js"
+    "test": "jest"
   },
   "engines": {
     "node": "14.19.0"
